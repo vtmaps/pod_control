@@ -15,10 +15,12 @@ Pod::Spec.new do |m|
   m.documentation_url = 'https://docs.mapbox.com/ios/api/maps/'
 
   m.source = {
-    :http => "https://files.viettelmaps.vn/ios-sdk/vtmap-ios-sdk.zip",
+    #:http => "https://files.viettelmaps.vn/ios-sdk/vtmap-ios-sdk.zip",
+	:http => "http://10.30.176.200:8080/vtmap-sdk/vtmap-ios-sdk_sv_that.zip",
     :flatten => true
   }
   #m.source = {
+  
   #  :http => "http://localhost:8888/mapbox-ios-sdk-snapshot-dynamic.zip",
   #  :flatten => true
   #}
