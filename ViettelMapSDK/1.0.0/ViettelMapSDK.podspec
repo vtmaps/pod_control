@@ -1,6 +1,6 @@
 Pod::Spec.new do |m|
 
-  version = '0.0.1'
+  version = '1.0.0'
 
   m.name    = 'ViettelMapSDK'
   m.version = version
@@ -15,7 +15,7 @@ Pod::Spec.new do |m|
   m.documentation_url = 'https://docs.mapbox.com/ios/api/maps/'
 
   m.source = {
-    :http => "http://10.30.176.200:8080/vtmap-sdk/vtmap-ios-sdk_sv_that.zip",
+    :http => "https://files.viettelmaps.vn/ios-sdk/vtmap-ios-sdk.zip",
     :flatten => true
   }
   #m.source = {
