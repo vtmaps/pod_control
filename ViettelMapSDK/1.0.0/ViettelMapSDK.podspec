@@ -18,11 +18,6 @@ Pod::Spec.new do |m|
 	#:http => "http://10.30.176.200:8080/vtmap-sdk/vtmap-ios-sdk_sv_that.zip",
     :flatten => true
   }
-  #m.source = {
-  
-  #  :http => "http://localhost:8888/mapbox-ios-sdk-snapshot-dynamic.zip",
-  #  :flatten => true
-  #}
 
   m.platform              = :ios
   m.ios.deployment_target = '9.0'
