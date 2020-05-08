@@ -5,14 +5,13 @@ Pod::Spec.new do |m|
   m.name    = 'ViettelMapSDK'
   m.version = version
 
-  m.summary           = 'Open source vector map solution for iOS with full styling capabilities.'
+  m.summary           = 'Open source vector map solution for iOS.'
   m.description       = 'Open source, OpenGL-based vector map solution for iOS with full styling capabilities and Cocoa Touch APIs.'
-  m.homepage          = 'https://docs.mapbox.com/ios/maps/'
+  m.homepage          = 'https://docs.viettelmaps.com.vn:8080/'
   m.license           = { :type => 'BSD', :file => 'LICENSE.md' }   
-  m.author            = { 'Mapbox' => 'mobile@mapbox.com' }
-  m.screenshot        = "https://docs.mapbox.com/ios/api/maps/#{version}/img/screenshot.png"
-  m.social_media_url  = 'https://twitter.com/mapbox'
-  m.documentation_url = 'https://docs.mapbox.com/ios/api/maps/'
+  m.author            = { 'VTS' => 'viettelmaps@gmail.com' }
+  m.social_media_url  = 'https://facebook.com/vtmaps'
+  m.documentation_url = 'https://docs.viettelmaps.com.vn:8080/'
 
   m.source = {
     :http => "https://files.viettelmaps.vn/ios-sdk/vtmap-ios-sdk.zip",
