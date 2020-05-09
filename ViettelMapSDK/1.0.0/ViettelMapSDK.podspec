@@ -15,8 +15,7 @@ Pod::Spec.new do |m|
 
   m.source = {
     :http => "https://files.viettelmaps.com.vn:8080/ios-sdk/vtmap-ios-sdk.zip",
-	  #:http => "https://files.viettelmaps.com.vn:8080/ios-sdk/vtmap-ios-sdk_sv_test_8080.zip",
-	#:http => "http://10.30.176.200:8080/vtmap-sdk/vtmap-ios-sdk_sv_that.zip",
+	  #:http => "https://files.viettelmaps.com.vn:8080/ios-sdk/vtmap-ios-sdk_sv_test_8080.zip"
     :flatten => true
   }
 
