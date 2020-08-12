@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source       = { :git => "http://10.60.156.11/ducdq1/vtmap_geocoder_ios.git", :tag => "master" }
+  s.source       = { :git => "https://github.com/vtmaps/vtmaps_ios_geocoder.git", :tag => "master" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
