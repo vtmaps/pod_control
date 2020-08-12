@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source = { :git => "https://github.com/vtmaps/vtmaps_ios_events.git", :tag => "v0.0.1"}
+  s.source = { :git => "https://github.com/vtmaps/vtmaps_ios_events.git", :tag => "master"}
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
