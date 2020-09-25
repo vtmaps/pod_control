@@ -7,16 +7,16 @@ Pod::Spec.new do |m|
 
   m.summary           = 'Open source vector map solution for iOS.'
   m.description       = 'Open source, OpenGL-based vector map solution for iOS with full styling capabilities and Cocoa Touch APIs.'
-  m.homepage          = 'https://docs.viettelmaps.com.vn:8080/'
+  m.homepage          = 'https://docs.viettelmaps.vn/'
   m.license           = { :type => 'BSD', :file => 'LICENSE.md' }   
   m.author            = { 'VTS' => 'viettelmaps@gmail.com' }
   m.social_media_url  = 'https://facebook.com/vtmaps'
-  m.documentation_url = 'https://docs.viettelmaps.com.vn:8080/'
+  m.documentation_url = 'https://docs.viettelmaps.vn/'
 
   m.source = {
  
-    :http => "https://files.viettelmaps.vn/ios-sdk/vtmap-ios-sdk.zip",
-    #:http => "https://files.viettelmaps.com.vn:8080/ios-sdk/vtmap-ios-sdk_sv_test_8080.zip", 
+    #:http => "https://files.viettelmaps.vn/ios-sdk/vtmap-ios-sdk.zip",
+    :http => "https://files.viettelmaps.com.vn:8080/ios-sdk/vtmap-ios-sdk_sv_test_8080.zip", 
     :flatten => true
   }
 
