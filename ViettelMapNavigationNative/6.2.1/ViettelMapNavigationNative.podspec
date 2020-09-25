@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.requires_arc = true
-  s.module_name = "ViettelMapNavigationNative"
+  s.module_name = "MapboxNavigationNative"
   
 
 end
