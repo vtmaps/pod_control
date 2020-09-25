@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.module_name = "MapboxCoreNavigation"
 
-  s.dependency "MapboxNavigationNative", "~> 6.2.1"
+  s.dependency "ViettelMapNavigationNative", "~> 6.2.1"
   s.dependency "ViettelMapDirections", "~> 0.0.1"
   s.dependency "ViettelMapMobileEvents"        # Always pin to a patch release if pre-1.0
   s.dependency "Turf", "~> 0.3.0"                       # Always pin to a patch release if pre-1.0
