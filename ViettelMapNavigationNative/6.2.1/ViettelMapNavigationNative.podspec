@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.name = "ViettelMapNavigationNative.podspec"
+  s.name = "ViettelMapNavigationNative"
   s.version = "6.2.1"
   s.summary = "Core components for turn-by-turn navigation on iOS."
 
