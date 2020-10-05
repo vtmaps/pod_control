@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
   s.name = "ViettelMapNavigationNative"
   s.version = "6.2.1"
-  s.summary = "Core components for turn-by-turn navigation on iOS."
+  s.summary = "Navigation library for iOS"
 
   s.description  = <<-DESC
   Mapbox Core Navigation provides the core spatial and timing logic for turn-by-turn navigation along a route. For a complete turn-by-turn navigation interface, use the Mapbox Navigation SDK for iOS (MapboxNavigation).
@@ -36,8 +36,10 @@ Pod::Spec.new do |s|
  
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.requires_arc = true
-  s.module_name = "MapboxNavigationNative"
+  s.requires_arc = true,
+  "vendored_frameworks": "MapboxNavigationNative.framework",
+  "module_name": "MapboxNavigationNative",
+  "libraries": "c++"
   
 
 end
