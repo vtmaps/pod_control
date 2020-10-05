@@ -37,9 +37,9 @@ Pod::Spec.new do |s|
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.requires_arc = true,
-  "vendored_frameworks": "MapboxNavigationNative.framework",
-  "module_name": "MapboxNavigationNative",
-  "libraries": "c++"
+  s.vendored_frameworks = "MapboxNavigationNative.framework",
+  s.module_name= "MapboxNavigationNative",
+  s.libraries = "c++"
   
 
 end

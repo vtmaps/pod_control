@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.requires_arc = true
-  s.module_name = "ViettelMapSpeechSwift"
+  s.module_name = "MapboxSpeech"
 
   s.swift_version = "5.0"
 
