@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "ViettelMapGeocoder"
-  s.version      = "0.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Mapbox Geocoding API for Swift and Objective-C."
 
   s.description  = <<-DESC
