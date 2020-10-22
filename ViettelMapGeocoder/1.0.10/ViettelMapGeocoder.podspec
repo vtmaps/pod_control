@@ -42,5 +42,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.module_name = "MapboxGeocoder"
   s.swift_version = "5.0"
+  s.dependency "ViettelMapSDK", "~> 1.0.0"
 
 end
