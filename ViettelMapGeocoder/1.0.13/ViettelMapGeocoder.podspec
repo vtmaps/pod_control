@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.source_files  = "MapboxGeocoder"
-
+  s.dependency "ViettelMapSDK", "~> 1.0.0"
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   
   s.requires_arc = true
