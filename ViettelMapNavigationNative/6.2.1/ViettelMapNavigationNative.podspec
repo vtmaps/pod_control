@@ -7,11 +7,11 @@ Pod::Spec.new do |s|
   s.summary = "Navigation library for iOS"
 
   s.description  = <<-DESC
-  Mapbox Core Navigation provides the core spatial and timing logic for turn-by-turn navigation along a route. For a complete turn-by-turn navigation interface, use the Mapbox Navigation SDK for iOS (MapboxNavigation).
+  VTMaps Core Navigation provides the core spatial and timing logic for turn-by-turn navigation along a route. For a complete turn-by-turn navigation interface, use the Mapbox Navigation SDK for iOS (MapboxNavigation).
                    DESC
 
-  s.homepage = "https://docs.mapbox.com/ios/navigation/"
-  s.documentation_url = "https://docs.mapbox.com/ios/api/navigation/"
+  s.homepage = "https://docs.viettelmaps.vn/ios-sdk/overview"
+  s.documentation_url = "https://docs.viettelmaps.vn/ios-sdk/overview"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
