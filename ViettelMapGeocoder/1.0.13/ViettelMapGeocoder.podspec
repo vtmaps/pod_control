@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source       = { :git => "https://github.com/vtmaps/vtmaps_ios_geocoder.git", :tag => "1.0.13" }
+  s.source       = { :git => "https://github.com/vtmaps/vtmaps_ios_geocoder.git", :tag => "#{s.version.to_s}" }
   s.resources = ['MapboxGeocoder/Resources/*/*', 'MapboxGeocoder/Resources/*']
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
