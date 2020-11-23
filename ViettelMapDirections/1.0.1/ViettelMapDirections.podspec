@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "ViettelMapDirections"
-  s.version      = "1.0.1"
+  s.version      = "1.0.1" 
   s.summary      = "Mapbox Directions API wrapper for Swift and Objective-C."
 
   s.description  = <<-DESC
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "10.0"
   s.osx.deployment_target = "10.12"
   s.watchos.deployment_target = "3.0"
-  s.tvos.deployment_target = "10.0"
+  s.tvos.deployment_target = "10.0" 
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
