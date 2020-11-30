@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.name         = "VTMapAnnotationExtension"
+  s.name         = "ViettelMapAnnotationExtension"
   s.version      = "0.0.1"
 
   s.summary      = "Extension to support Mapbox's runtime styling annotations api."
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.requires_arc = true
-  s.module_name = "MapboxAnnotationExtension"
+  s.module_name = "ViettelMapAnnotationExtension"
   #s.dependency "Mapbox-iOS-SDK", "~> 6.0"
    s.dependency "ViettelMapSDK", "~> 1.0.1"
 end
