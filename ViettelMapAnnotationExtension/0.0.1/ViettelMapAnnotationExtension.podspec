@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source       = { :git => "https://github.com/vtmaps/vtmaps-annotation-extension.git", :"master" }
+  s.source       = { :git => "https://github.com/vtmaps/vtmaps-annotation-extension.git", "master" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
