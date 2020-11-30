@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.requires_arc = true
-  s.module_name = "ViettelMapAnnotationExtension"
+  s.module_name = "MapboxAnnotationExtension"
   #s.dependency "Mapbox-iOS-SDK", "~> 6.0"
    s.dependency "ViettelMapSDK", "~> 1.0.1"
 end
