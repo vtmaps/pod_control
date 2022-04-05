@@ -2,12 +2,12 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.name = "ViettelMapCoreNavigation"
+  s.name = "ViettelMapNavigation"
   s.version = "1.0.3"
-  s.summary = "Core components for turn-by-turn navigation on iOS."
+  s.summary = "Complete turn-by-turn navigation interface for iOS."
 
   s.description  = <<-DESC
-  Mapbox Core Navigation provides the core spatial and timing logic for turn-by-turn navigation along a route. For a complete turn-by-turn navigation interface, use the Mapbox Navigation SDK for iOS (MapboxNavigation).
+  The Mapbox Navigation SDK for iOS is a drop-in interface for turn-by-turn navigation along a route, complete with a well-designed map and easy-to-understand spoken directions. Routes are powered by Mapbox Directions.
                    DESC
 
   s.homepage = "https://docs.mapbox.com/ios/navigation/"
@@ -24,8 +24,7 @@ Pod::Spec.new do |s|
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.ios.deployment_target = "10.0"
-
+  s.ios.deployment_target = "9.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -33,17 +32,21 @@ Pod::Spec.new do |s|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source_files = "MapboxCoreNavigation/**/*.{h,m,swift}"
+  s.source_files = "MapboxNavigation/**/*.{h,m,swift}"
+
+  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+
+  s.resources = ['MapboxNavigation/Resources/*/*', 'MapboxNavigation/Resources/*']
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.requires_arc = true
-  s.module_name = "MapboxCoreNavigation"
+  s.module_name = "MapboxNavigation"
 
-  s.dependency "ViettelMapNavigationNative", "~> 6.2.1"
-  s.dependency "ViettelMapDirections", "~> 1.0.3"
-  s.dependency "ViettelMapMobileEvents"        # Always pin to a patch release if pre-1.0
-  s.dependency "Turf", "~> 0.3.0"                       # Always pin to a patch release if pre-1.0
+  s.dependency "ViettelMapCoreNavigation", "#{s.version.to_s}"
+  s.dependency "ViettelMapSDK", "~> 1.0.3"
+  s.dependency "Solar", "~> 2.1"
+  s.dependency "ViettelMapSpeechSwift", "~> 0.1.0-ios.9.0"
 
   s.swift_version = "5.0"
 
