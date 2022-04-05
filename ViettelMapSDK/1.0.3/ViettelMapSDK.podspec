@@ -1,6 +1,6 @@
 Pod::Spec.new do |m|
 
-  version = '1.0.2'
+  version = '1.0.3'
 
   m.name    = 'ViettelMapSDK'
   m.version = version
