@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
    s.source = {  
-    :http => "https://maps.viettel.vn/files/ios-sdk/MapboxNavigationNative-ios-sdk-6.2.1.zip", 
+    :http => "https://files-maps.viettel.vn/ios-sdk/MapboxNavigationNative-ios-sdk-6.2.1.zip", 
     :flatten => true
   }
  
