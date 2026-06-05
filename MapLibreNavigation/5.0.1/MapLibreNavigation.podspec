@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
     "MapboxNavigationObjc/**/*.{h,m}"
   ]
   s.public_header_files = "MapboxNavigationObjc/include/**/*.h"
-  s.header_mappings_dir = "MapboxNavigationObjc/include"
+  s.header_mappings_dir = "MapboxNavigationObjc"
   # s.prepare_command = <<-CMD
   #   mkdir -p MapboxNavigationObjc/include/MapboxNavigation
   #   mv MapboxNavigationObjc/include/MapboxNavigation.h MapboxNavigationObjc/include/MapboxNavigation/

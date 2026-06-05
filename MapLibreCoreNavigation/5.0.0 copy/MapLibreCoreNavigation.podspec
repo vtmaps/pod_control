@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name = "MapLibreCoreNavigation"
-  s.version = "5.0.1"
+  s.version = "5.0.0"
   s.summary = "Core components for turn-by-turn navigation on iOS."
 
   s.description  = <<-DESC
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source = { :git => "https://github.com/vtmaps/maplibre-navigation-ios", :tag => "1.0.13" }
+  s.source = { :git => "https://github.com/vtmaps/maplibre-navigation-ios", :tag => "1.0.0" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
     "MapboxCoreNavigationObjc/**/*.{h,m}"
   ]
   s.public_header_files = "MapboxCoreNavigationObjc/include/*.h"
-  s.header_dir = "MapboxCoreNavigationObjc/include"
+  s.header_mappings_dir = "MapboxCoreNavigationObjc"
   s.pod_target_xcconfig = {
   'DEFINES_MODULE' => 'YES'
   }
