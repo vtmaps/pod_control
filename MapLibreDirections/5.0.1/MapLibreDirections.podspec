@@ -42,19 +42,20 @@ Pod::Spec.new do |s|
     "MapboxDirections/**/*.swift",
     "MapboxDirectionsObjc/**/*.{h,m}"
   ]
-  s.public_header_files = [
-    "MapboxDirectionsObjc/include/*.h",
-    "MapboxDirectionsObjc/MBAttribute.h",
-    "MapboxDirectionsObjc/MBLaneIndication.h",
-    "MapboxDirectionsObjc/MBRoadClasses.h",
-    "MapboxDirectionsObjc/MBRouteOptions.h"
-  ]
-
-  s.header_mappings_dir = "MapboxDirectionsObjc"
+  s.public_header_files = "MapboxDirectionsObjc/include/*.h"
+  s.header_dir = "MapboxDirections"
   s.pod_target_xcconfig = {
-    'DEFINES_MODULE' => 'YES',
-    'HEADER_SEARCH_PATHS' => '"$(PODS_TARGET_SRCROOT)/MapboxDirectionsObjc" "$(PODS_TARGET_SRCROOT)/MapboxDirectionsObjc/include"'
+    'DEFINES_MODULE' => 'YES'
   }
+  s.prepare_command = <<-CMD
+    sed -i.bak \
+      -e 's|#import \"../MBLaneIndication.h\"|#import \"MBLaneIndication.h\"|g' \
+      -e 's|#import \"../MBAttribute.h\"|#import \"MBAttribute.h\"|g' \
+      -e 's|#import \"../MBRouteOptions.h\"|#import \"MBRouteOptions.h\"|g' \
+      -e 's|#import \"../MBRoadClasses.h\"|#import \"MBRoadClasses.h\"|g' \
+      MapboxDirectionsObjc/include/MapboxDirections.h
+    rm -f MapboxDirectionsObjc/include/MapboxDirections.h.bak
+  CMD
   # s.exclude_files       = "MapboxDirectionsObjc/include/MapboxDirections.h"
   # s.preserve_paths      = "MapboxDirectionsObjc/module.modulemap"
 

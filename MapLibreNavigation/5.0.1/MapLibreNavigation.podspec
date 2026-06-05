@@ -41,12 +41,16 @@ Pod::Spec.new do |s|
     "MapboxNavigation/**/*.swift",
     "MapboxNavigationObjc/**/*.{h,m}"
   ]
-  s.public_header_files = "MapboxNavigationObjc/include/**/*.h"
-  s.header_mappings_dir = "MapboxNavigationObjc"
+  s.public_header_files = "MapboxNavigationObjc/include/*.h"
+  s.header_dir = "MapboxNavigation"
   s.pod_target_xcconfig = {
-    'DEFINES_MODULE' => 'YES',
-    'HEADER_SEARCH_PATHS' => '"$(PODS_TARGET_SRCROOT)/MapboxNavigationObjc" "$(PODS_TARGET_SRCROOT)/MapboxNavigationObjc/include"'
+    'DEFINES_MODULE' => 'YES'
   }
+  s.prepare_command = <<-CMD
+    sed -i.bak 's|#import \"../MBRouteVoiceController.h\"|#import \"MBRouteVoiceController.h\"|g' \
+      MapboxNavigationObjc/include/MapboxNavigation.h
+    rm -f MapboxNavigationObjc/include/MapboxNavigation.h.bak
+  CMD
 #   s.public_header_files = [
 #   "MapboxNavigation/**/*.h",
 #   "MapboxCoreNavigation/**/*.h"
