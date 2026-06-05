@@ -55,7 +55,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.module_name = "MapboxNavigation"
-  s.dependency "MapLibreCoreNavigation", "#{s.version.to_s}"
+  s.dependency "MapLibreCoreNavigation", "5.0.0"
   # s.dependency 'MapLibre', '6.25.1'
   # s.dependency "ViettelMapSDK", "~> 1.0.3"
   s.dependency "ViettelMapSDK", "~> 6.26.2"
