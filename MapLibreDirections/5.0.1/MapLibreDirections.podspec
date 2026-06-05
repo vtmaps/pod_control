@@ -42,11 +42,13 @@ Pod::Spec.new do |s|
     "MapboxDirections/**/*.swift",
     "MapboxDirectionsObjc/**/*.{h,m}"
   ]
-  s.public_header_files = "MapboxDirectionsObjc/include/*.h"
-  # s.header_dir = "MapboxDirections"
-  # s.pod_target_xcconfig = {
-  # 'DEFINES_MODULE' => 'YES'
-  # }
+  s.public_header_files = [
+    "MapboxDirectionsObjc/include/*.h",
+    "MapboxDirectionsObjc/MBAttribute.h",
+    "MapboxDirectionsObjc/MBLaneIndication.h",
+    "MapboxDirectionsObjc/MBRoadClasses.h",
+    "MapboxDirectionsObjc/MBRouteOptions.h"
+  ]
 
   s.header_mappings_dir = "MapboxDirectionsObjc"
   s.pod_target_xcconfig = {
