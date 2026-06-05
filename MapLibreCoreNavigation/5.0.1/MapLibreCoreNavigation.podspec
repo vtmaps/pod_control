@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source = { :git => "https://github.com/vtmaps/maplibre-navigation-ios", :tag => "1.0.0" }
+  s.source = { :git => "https://github.com/vtmaps/maplibre-navigation-ios", :tag => "1.0.13" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -43,14 +43,15 @@ Pod::Spec.new do |s|
   s.public_header_files = "MapboxCoreNavigationObjc/include/*.h"
   s.header_mappings_dir = "MapboxCoreNavigationObjc"
   s.pod_target_xcconfig = {
-  'DEFINES_MODULE' => 'YES'
+    'DEFINES_MODULE' => 'YES',
+    'HEADER_SEARCH_PATHS' => '"$(PODS_TARGET_SRCROOT)/MapboxCoreNavigationObjc" "$(PODS_TARGET_SRCROOT)/MapboxCoreNavigationObjc/include"'
   }
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.requires_arc = true
   s.module_name = "MapboxCoreNavigation"
-  s.dependency 'MapLibreDirections', '5.0.0'
+  s.dependency 'MapLibreDirections', '5.0.1'
   # s.dependency "ViettelMapNavigationNative", "~> 6.2.1"
   # s.dependency "ViettelMapDirections", "~> 1.0.3"
   # s.dependency "ViettelMapMobileEvents"        # Always pin to a patch release if pre-1.0
